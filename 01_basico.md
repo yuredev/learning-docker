@@ -107,4 +107,9 @@ docker run -it ubuntu bash
 ```bash
 docker exec -it meu-container bash
 
+```
+#### Significado das flags -it
+**-i (interactive)**: Mantém o STDIN aberto, permitindo interatividade.
+
+**-t (tty)**: Aloca um pseudo-TTY, criando um terminal interativo.
 
