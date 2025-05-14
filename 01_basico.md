@@ -79,3 +79,32 @@ docker run --name meu-postgis \
   -d postgis/postgis
 ```
 
+### Executar container em background
+
+```docker run -dti <image_name>```
+
+# 🐳 Diferença entre `docker run` e `docker exec`
+
+## 🔹 `docker run`
+
+- Cria **um novo container** a partir de uma imagem.
+- Pode executar um comando assim que o container é iniciado.
+- Se a imagem não estiver no host, o Docker faz o **download automaticamente**.
+- Você pode especificar volumes, redes, variáveis de ambiente e mais no momento da criação.
+
+**Exemplo:**
+```shell
+docker run -it ubuntu bash
+```
+
+## 🔹 `docker exec`
+
+- O comando `docker exec` é utilizado para **executar um comando em um container que já está em execução**.
+- Com `docker exec`, você não cria um novo container. Em vez disso, você interage com um container que já está ativo.
+- Esse comando é muito útil para **executar comandos de forma interativa ou fazer depuração** em containers em execução.
+
+### Exemplo de uso:
+```bash
+docker exec -it meu-container bash
+
+
