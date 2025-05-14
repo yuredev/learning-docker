@@ -92,6 +92,11 @@ docker run --name meu-postgis \
 - Se a imagem não estiver no host, o Docker faz o **download automaticamente**.
 - Você pode especificar volumes, redes, variáveis de ambiente e mais no momento da criação.
 
+## Executando container já criado
+O **docker run** tambem serve para rodar um container já criado
+
+```docker run <nome_container>```
+
 **Exemplo:**
 ```shell
 docker run -it ubuntu bash
