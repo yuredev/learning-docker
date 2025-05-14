@@ -96,12 +96,6 @@ docker run --name meu-postgis \
 docker run -it ubuntu bash
 ```
 
-#### Executando container já criado
-O **docker run** tambem serve para rodar um container já criado
-
-```docker run <nome_container>```
-
-
 ## 🔹 `docker exec`
 
 - O comando `docker exec` é utilizado para **executar um comando em um container que já está em execução**.
@@ -117,4 +111,8 @@ docker exec -it meu-container bash
 **-i (interactive)**: Mantém o STDIN aberto, permitindo interatividade.
 
 **-t (tty)**: Aloca um pseudo-TTY, criando um terminal interativo.
+
+## Executando container já criado
+
+```docker start <nome_container>```
 
